@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfRectangleExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfRectangleExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" KeyDown="Window_KeyDown">
+    <Canvas >
+        <Canvas.Background>
+            <ImageBrush/>
+        </Canvas.Background>
+        <Rectangle x:Name="Ufo" Height="100" Canvas.Left="341" Stroke="Black" Canvas.Top="256" Width="100">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/images/ufo.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="btnLeft" Content="&lt;" Canvas.Left="35" Canvas.Top="388" HorizontalAlignment="Left" VerticalAlignment="Top" Width="66" Click="btnLeft_Click"/>
+        <Button x:Name="btnRight" Content="&gt;" Canvas.Left="707" Canvas.Top="388" Width="66" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnRight_Click"/>
+        <Image x:Name="Burger" Height="40" Canvas.Left="376" Source="/Images/burger.png" Stretch="Fill" Canvas.Top="73" Width="48" MouseDown="Burger_MouseDown"/>
+        <TextBlock x:Name="TxtPoints" Canvas.Left="46" TextWrapping="Wrap" Text="Poäng: " Canvas.Top="31"/>
+    </Canvas>
+
+</Window>

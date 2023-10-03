@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="burger.png" />
+    <None Remove="Images\burger.png" />
+    <None Remove="ufo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="burger.png" />
+    <Resource Include="Images\burger.png" />
+    <Resource Include="Images\ufo.png" />
+  </ItemGroup>
+
+</Project>
